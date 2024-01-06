@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2ece6; /* Light beige background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .container {
+    background-color: #e0dedc; /* Light gray container background color */
+    padding: 40px; /* Increased padding */
+    border-radius: 8px;
+    width: 90%; /* Adjusted width */
+    max-width: 900px; /* Adjusted max-width */
+    display: flex; /* Make the container a flex container */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  h1,
+  h2 {
+    color: #3e3631; /* Dark brown text color */
+    text-align: center;
   }
-}
+  
+  label {
+    color: #3e3631; /* Dark brown text color */
+    margin-right: 10px;
+  }
+  
+  input,
+  select,
+  button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+  }
+  
+  button {
+    background-color: #4e6a55; /* Matcha green button color */
+    color: #f2ece6; /* Light beige text color */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #3d5441; /* Darker matcha green button color on hover */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #d4d1cd; /* Light gray task item background color */
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  span {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
