@@ -15,5 +15,5 @@ const FilterCategory = ({categories, selectedCategories, onSelectCategories}) =>
          </select>
     </div>
 );
-
+//ready
 export default FilterCategory;

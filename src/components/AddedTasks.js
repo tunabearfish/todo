@@ -15,5 +15,5 @@ const AddedTasks = ({ tasks, onDelete }) => (
     )}
   </div>
 );
-
+//ready
 export default AddedTasks;
